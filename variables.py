@@ -1,6 +1,6 @@
 import numpy as np
 import pygame
-my_array=np.full((51,51),1)
+my_array=np.random.randint(0,2, size=(50, 50))
 negro = (255, 255, 255)
 filas = len(my_array)
 columnas = len(my_array)

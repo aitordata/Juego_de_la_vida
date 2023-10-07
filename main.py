@@ -2,12 +2,13 @@ import numpy as np
 import time 
 import pygame
 from functions import celulas_alrrededor,renderizar_matriz
-from variables import my_array,negro
+from variables import my_array,negro,ventana
 
 
 pygame.init()
 ventana = pygame.display.set_mode((800, 800))
 pygame.display.set_caption("Juego de vida")
+
 ejecutando = True
 
 while ejecutando:
@@ -27,7 +28,7 @@ while ejecutando:
          if celulas_vivas_alrrededor==3:
             my_array[x][y]=1
     renderizar_matriz(my_array)
-    time.sleep(2)
+    time.sleep(1)
     print(my_array)
     pygame.display.flip()
                     
