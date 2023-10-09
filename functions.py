@@ -8,7 +8,6 @@ def limpiar_consola(): #Limpia la consola
     
     os.system('clear')
 def celulas_alrrededor(my_array,x,y): #Devuelve cuantas células de alrrededor estan vivas 
-    
     if x==0: 
         if y==0:
             resultados_alrrededor=[my_array[x][y+1],my_array[x+1][y],my_array[x+1][y+1]]
