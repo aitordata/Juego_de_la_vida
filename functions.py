@@ -5,10 +5,10 @@ import pygame
 from variables import columnas,filas,celda_alto,celda_ancho,ventana
 
 def limpiar_consola(): #Limpia la consola
+    
     os.system('clear')
-
-
 def celulas_alrrededor(my_array,x,y): #Devuelve cuantas células de alrrededor estan vivas 
+    
     if x==0: 
         if y==0:
             resultados_alrrededor=[my_array[x][y+1],my_array[x+1][y],my_array[x+1][y+1]]
@@ -39,8 +39,7 @@ def celulas_alrrededor(my_array,x,y): #Devuelve cuantas células de alrrededor e
         else:
             resultados_alrrededor=[my_array[x][y-1],my_array[x-1][y-1],my_array[x-1][y],my_array[x-1][y+1],my_array[x][y+1]]
             return np.sum(resultados_alrrededor) 
-
-def renderizar_matriz(my_array): #función realizada con chat gpt 
+def renderizar_matriz(my_array): #función realizada con chat gpt: renderiza la matriz 
     for fila in range(filas):
         for columna in range(columnas):
             valor = my_array[fila][columna]

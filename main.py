@@ -29,6 +29,5 @@ while ejecutando:
             my_array[x][y]=1
     renderizar_matriz(my_array)
     time.sleep(1)
-    print(my_array)
     pygame.display.flip()
                     
